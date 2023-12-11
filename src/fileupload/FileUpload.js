@@ -16,7 +16,8 @@ const FileUpload = () => {
     formData.append('file', file);
 
     try {
-      await axios.post('http://localhost:5000/read', formData, {
+      // await axios.post('http://localhost:5000/read', formData, {
+      await axios.post('https://certify-server-ghemanth-tiggas-projects.vercel.app/read', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
